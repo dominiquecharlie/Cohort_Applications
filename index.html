@@ -27,7 +27,7 @@ body{
   -webkit-font-smoothing:antialiased;
 }
 img{max-width:100%;}
-
+ 
 /* ---------- top bar ---------- */
 .topbar{position:sticky; top:0; z-index:20; background:var(--ground); border-bottom:1px solid var(--line);}
 .topbar-inner{max-width:800px; margin:0 auto; padding:12px 24px; display:flex; align-items:center; justify-content:space-between; gap:16px;}
@@ -49,7 +49,7 @@ img{max-width:100%;}
 .progress-label{font-family:var(--head); font-size:10.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3); font-variant-numeric:tabular-nums;}
 .progress{width:96px; height:5px; background:var(--line); border-radius:3px; overflow:hidden;}
 .progress span{display:block; height:100%; width:0%; background:var(--forest); transition:width .25s ease;}
-
+ 
 /* ---------- shell ---------- */
 main{max-width:800px; margin:0 auto; padding:0 24px 96px;}
 .hero{padding:52px 0 34px; border-bottom:1px solid var(--line);}
@@ -71,14 +71,14 @@ ol.sessions li::before{
 ul.keeps{margin:0; padding:0; list-style:none;}
 ul.keeps li{position:relative; padding-left:16px; margin-bottom:7px; font-size:15.5px; color:var(--ink-2);}
 ul.keeps li::before{content:""; position:absolute; left:0; top:9px; width:6px; height:6px; background:var(--lime); border-radius:1px;}
-
+ 
 /* ---------- sections ---------- */
 section.step{padding:38px 0; border-bottom:1px solid var(--line);}
 .step-head{display:flex; align-items:baseline; gap:12px; margin-bottom:6px;}
 .step-num{font-family:var(--head); font-size:12px; font-weight:600; letter-spacing:.1em; color:var(--orange); font-variant-numeric:tabular-nums;}
 .step-head h2{font-family:var(--head); font-size:24px; font-weight:600; letter-spacing:-.01em; color:var(--forest-dark); margin:0;}
 .step-note{font-size:15.5px; color:var(--ink-3); margin:0 0 22px; max-width:60ch;}
-
+ 
 .field{margin-bottom:20px;}
 .field > label, .group > legend{display:block; font-family:var(--head); font-size:13px; font-weight:600; color:var(--ink); margin-bottom:6px; padding:0;}
 .sub-label{font-family:var(--body); font-weight:400; font-size:14px; color:var(--ink-3); display:block; margin-bottom:6px;}
@@ -97,7 +97,7 @@ input.invalid, textarea.invalid, select.invalid{border-color:var(--orange-bright
 .row-2{grid-template-columns:1fr 1fr;}
 .row-3{grid-template-columns:1fr 1fr 1fr;}
 @media (max-width:640px){ .row-2,.row-3{grid-template-columns:1fr;} }
-
+ 
 fieldset.group{border:0; margin:0 0 20px; padding:0;}
 .choices{display:flex; flex-wrap:wrap; gap:8px;}
 .choices.stack{flex-direction:column; gap:6px;}
@@ -110,18 +110,18 @@ fieldset.group{border:0; margin:0 0 20px; padding:0;}
 .choice input{margin:3px 0 0; accent-color:var(--forest); flex-shrink:0;}
 .choice:has(input:checked){border-color:var(--forest); background:var(--wash);}
 .choice input:focus-visible{outline:2px solid var(--forest); outline-offset:2px;}
-
+ 
 .seat{background:var(--surface); border:1px solid var(--line); border-radius:7px; padding:16px 16px 2px; margin-bottom:12px;}
 .seat-label{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:12px;}
 .seat-name{font-family:var(--head); font-size:12.5px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--forest);}
 .seat-tag{font-family:var(--head); font-size:10.5px; font-weight:500; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-3);}
 .seat.lead{border-left:3px solid var(--forest);}
-
+ 
 .callout{background:var(--wash); border-left:3px solid var(--lime); padding:14px 18px; margin:0 0 22px; font-size:15.5px; color:var(--ink-2);}
 .callout b{color:var(--forest-dark); font-family:var(--head); font-weight:600;}
-
+ 
 .hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden;}
-
+ 
 .submit-bar{padding:34px 0 0; display:flex; flex-direction:column; gap:14px; align-items:flex-start;}
 button.primary{font-family:var(--head); font-size:16px; font-weight:600; color:#fff; background:var(--forest); border:0; border-radius:6px; padding:14px 30px; cursor:pointer; transition:background .15s ease, transform .05s ease;}
 button.primary:hover{background:var(--forest-dark);}
@@ -135,7 +135,7 @@ button:focus-visible{outline:2px solid var(--forest); outline-offset:2px;}
 .saved-note{font-size:14px; color:var(--ink-3);}
 footer{padding:30px 0 0; border-top:1px solid var(--line); margin-top:38px; font-size:14px; color:var(--ink-3); display:flex; flex-wrap:wrap; gap:8px 18px; justify-content:space-between;}
 footer a{color:var(--forest); text-decoration:none; border-bottom:1px solid var(--line-2);}
-
+ 
 #confirm{display:none; padding:64px 0 40px;}
 #confirm.show{display:block;}
 #form-view.hide{display:none;}
@@ -155,7 +155,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
 </style>
 </head>
 <body>
-
+ 
 <header class="topbar">
   <div class="topbar-inner">
     <div class="lockup">
@@ -169,7 +169,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
     </div>
   </div>
 </header>
-
+ 
 <main>
 <div id="form-view">
   <div class="hero">
@@ -205,14 +205,14 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
       </div>
     </div>
   </div>
-
+ 
   <form id="app-form" novalidate>
     <div class="hp" aria-hidden="true"><label for="website2">Leave this field empty</label><input type="text" id="website2" name="website2" tabindex="-1" autocomplete="off"></div>
-
+ 
     <section class="step">
       <div class="step-head"><span class="step-num">01</span><h2>Your organization</h2></div>
       <p class="step-note">Takes about ten minutes. Your answers save in this browser as you go.</p>
-
+ 
       <div class="field">
         <label for="org_name">Organization name <span class="req">*</span></label>
         <input type="text" id="org_name" name="org_name" data-required autocomplete="organization">
@@ -258,11 +258,11 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
         </div>
       </div>
     </section>
-
+ 
     <section class="step">
       <div class="step-head"><span class="step-num">02</span><h2>Contacts</h2></div>
       <p class="step-note">One person we reach with logistics, and the person who leads the organization.</p>
-
+ 
       <div class="row row-2">
         <div class="field"><label for="pc_name">Primary contact name <span class="req">*</span></label><input type="text" id="pc_name" name="pc_name" data-required autocomplete="name"></div>
         <div class="field"><label for="pc_role">Their role <span class="req">*</span></label><input type="text" id="pc_role" name="pc_role" data-required></div>
@@ -271,27 +271,27 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
         <div class="field"><label for="pc_email">Email <span class="req">*</span></label><input type="email" id="pc_email" name="pc_email" data-required autocomplete="email"></div>
         <div class="field"><label for="pc_phone">Phone</label><input type="tel" id="pc_phone" name="pc_phone" autocomplete="tel"></div>
       </div>
-
+ 
       <label class="choice" style="max-width:420px; margin-bottom:16px;">
         <input type="checkbox" id="same_lead" name="same_lead">
         <span>I am the person who leads this organization</span>
       </label>
-
+ 
       <div id="lead-fields" class="row row-3">
         <div class="field"><label for="ld_name">Organization lead, name <span class="req">*</span></label><input type="text" id="ld_name" name="ld_name" data-required></div>
         <div class="field"><label for="ld_role">Their role <span class="req">*</span></label><input type="text" id="ld_role" name="ld_role" data-required></div>
         <div class="field"><label for="ld_email">Their email <span class="req">*</span></label><input type="email" id="ld_email" name="ld_email" data-required></div>
       </div>
     </section>
-
+ 
     <section class="step">
       <div class="step-head"><span class="step-num">03</span><h2>Your team</h2></div>
       <p class="step-note">Up to five seats. The same team attends all three sessions, so bring the people who will carry this afterward. Volunteers and board members count as seats. Bring fewer if your team is smaller.</p>
-
+ 
       <div class="callout">
         <b>What makes a strong team.</b> Whoever leads the organization, whoever handles your tools and systems, and at least one person close to the community-facing work. Three people wearing all of those hats is a real team for this.
       </div>
-
+ 
       <div class="seat lead">
         <div class="seat-label"><span class="seat-name">Seat 1</span><span class="seat-tag">Organization lead, required</span></div>
         <div class="row row-2">
@@ -300,7 +300,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
         </div>
         <div class="field"><label for="s1_role">Role in the organization <span class="req">*</span></label><input type="text" id="s1_role" name="s1_role" data-required></div>
       </div>
-
+ 
       <div class="seat">
         <div class="seat-label"><span class="seat-name">Seat 2</span><span class="seat-tag">Optional</span></div>
         <div class="row row-2">
@@ -314,7 +314,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           </div>
         </div>
       </div>
-
+ 
       <div class="seat">
         <div class="seat-label"><span class="seat-name">Seat 3</span><span class="seat-tag">Optional</span></div>
         <div class="row row-2">
@@ -328,7 +328,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           </div>
         </div>
       </div>
-
+ 
       <div class="seat">
         <div class="seat-label"><span class="seat-name">Seat 4</span><span class="seat-tag">Optional</span></div>
         <div class="row row-2">
@@ -342,7 +342,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           </div>
         </div>
       </div>
-
+ 
       <div class="seat">
         <div class="seat-label"><span class="seat-name">Seat 5</span><span class="seat-tag">Optional</span></div>
         <div class="row row-2">
@@ -356,18 +356,18 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           </div>
         </div>
       </div>
-
+ 
       <div class="field">
         <label for="alternates">Alternates</label>
         <span class="hint">Two names we can call on if a seat opens up. Name and email each.</span>
         <textarea id="alternates" name="alternates" style="min-height:70px"></textarea>
       </div>
     </section>
-
+ 
     <section class="step">
       <div class="step-head"><span class="step-num">04</span><h2>Where you are with AI</h2></div>
       <p class="step-note">Answer as things actually are today. Starting from zero is a fine place to start.</p>
-
+ 
       <fieldset class="group">
         <legend>Where AI shows up in your work now</legend>
         <span class="hint">Check everything that applies.</span>
@@ -382,7 +382,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           <label class="choice"><input type="checkbox" name="use" value="Unsure"><span>Unsure</span></label>
         </div>
       </fieldset>
-
+ 
       <fieldset class="group">
         <legend>Written AI use policy <span class="req">*</span></legend>
         <div class="choices">
@@ -392,7 +392,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           <label class="choice"><input type="radio" name="policy" value="Unsure"><span>Unsure</span></label>
         </div>
       </fieldset>
-
+ 
       <fieldset class="group">
         <legend>Roughly how many of your people use AI tools <span class="req">*</span></legend>
         <div class="choices">
@@ -403,7 +403,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           <label class="choice"><input type="radio" name="howmany" value="Unsure"><span>Unsure</span></label>
         </div>
       </fieldset>
-
+ 
       <fieldset class="group">
         <legend>Does any tool you use touch community or client data <span class="req">*</span></legend>
         <div class="choices">
@@ -412,23 +412,23 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           <label class="choice"><input type="radio" name="clientdata" value="Unsure"><span>Unsure</span></label>
         </div>
       </fieldset>
-
+ 
       <div class="field">
         <label for="clientdata_detail">If yes or unsure, tell us in one line what that looks like</label>
         <input type="text" id="clientdata_detail" name="clientdata_detail">
       </div>
-
+ 
       <div class="field">
         <label for="why_now">What prompted your interest now <span class="req">*</span></label>
         <span class="hint">A hundred words is plenty.</span>
         <textarea id="why_now" name="why_now" data-required></textarea>
       </div>
     </section>
-
+ 
     <section class="step">
       <div class="step-head"><span class="step-num">05</span><h2>Capacity</h2></div>
       <p class="step-note">Scheduling gets set with the whole cohort once organizations are selected.</p>
-
+ 
       <fieldset class="group">
         <legend>Can your team attend all three sessions live <span class="req">*</span></legend>
         <div class="choices">
@@ -437,7 +437,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           <label class="choice"><input type="radio" name="attend" value="Depends on scheduling"><span>Depends on scheduling</span></label>
         </div>
       </fieldset>
-
+ 
       <fieldset class="group">
         <legend>Windows that work for your team <span class="req">*</span></legend>
         <span class="hint">Check everything workable.</span>
@@ -448,37 +448,37 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
           <label class="choice"><input type="checkbox" name="window" value="Weekday evening"><span>Weekday evening</span></label>
         </div>
       </fieldset>
-
+ 
       <div class="field">
         <label for="months">Months that work best</label>
         <input type="text" id="months" name="months" placeholder="For example, October and November">
       </div>
-
+ 
       <div class="field">
         <label for="barriers">Anything that would make participation hard</label>
         <span class="hint">Accessibility needs, connectivity, language, staff and volunteer time. Tell us so we can build around it.</span>
         <textarea id="barriers" name="barriers" style="min-height:80px"></textarea>
       </div>
     </section>
-
+ 
     <section class="step">
       <div class="step-head"><span class="step-num">06</span><h2>What we ask of you</h2></div>
       <p class="step-note">Four commitments. All four are required for the pilot to produce anything useful for your organization.</p>
-
+ 
       <div class="choices stack">
         <label class="choice"><input type="checkbox" name="commit" value="Readiness assessment" data-required><span>The person leading our organization completes the readiness assessment before session one.</span></label>
         <label class="choice"><input type="checkbox" name="commit" value="Diagnostic before and after" data-required><span>Everyone attending takes the literacy diagnostic before the first session and after the last one.</span></label>
         <label class="choice"><input type="checkbox" name="commit" value="Attend all three" data-required><span>Our team attends all three sessions.</span></label>
         <label class="choice"><input type="checkbox" name="commit" value="Anonymized case study" data-required><span>Our results may appear in anonymized form in the pilot case study, and we see it before anything is published.</span></label>
       </div>
-
+ 
       <div style="margin-top:22px">
         <div class="choices stack">
           <label class="choice"><input type="checkbox" name="reference" value="Willing to be a public reference"><span><b style="font-family:var(--head);font-weight:600">Optional.</b> We would consider being named publicly as a pilot organization and serving as a reference for funders. Checking this commits you to nothing; we would ask you again before using your name.</span></label>
         </div>
       </div>
     </section>
-
+ 
     <section class="step" style="border-bottom:0">
       <div class="step-head"><span class="step-num">07</span><h2>Anything else</h2></div>
       <p class="step-note">Questions, context, or anything that would not fit above.</p>
@@ -486,7 +486,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
         <label for="anything" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Anything else we should know</label>
         <textarea id="anything" name="anything" style="min-height:110px"></textarea>
       </div>
-
+ 
       <div class="submit-bar">
         <button type="submit" class="primary" id="submit-btn">Submit application</button>
         <p class="error-note" id="err">Some required answers are still open. We moved you to the first one.</p>
@@ -494,13 +494,13 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
       </div>
     </section>
   </form>
-
+ 
   <footer>
     <span>Intentional Data &middot; Ethical and Efficient</span>
     <span><a href="mailto:dominique.charlie@intentionaldata.org">dominique.charlie@intentionaldata.org</a></span>
   </footer>
 </div>
-
+ 
 <div id="confirm">
   <div class="confirm-mark" aria-hidden="true">
     <svg viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.2 5.2L20 7"/></svg>
@@ -508,13 +508,13 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
   <p class="eyebrow" id="confirm-eyebrow">Application received</p>
   <h1 id="confirm-head">Thank you</h1>
   <p class="lede" id="confirm-lede">Your application is in. Intentional Data and Measure review applications together and select the cohort jointly.</p>
-
+ 
   <ul class="next-list" id="next-list">
     <li><b>Review</b>We read every application and look at the cohort as a whole, since the room works best with a range of sizes and starting points.</li>
     <li><b>A short conversation</b>We may reach out with a question or two before deciding.</li>
     <li><b>Word either way</b>Every organization that applies hears back from us by email.</li>
   </ul>
-
+ 
   <div class="copy-box">
     <h3>Keep a copy</h3>
     <p id="copy-blurb">A record of what you submitted, for your files.</p>
@@ -526,19 +526,19 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
   </div>
 </div>
 </main>
-
+ 
 <script>
 (function(){
   "use strict";
-
+ 
   /* Google Apps Script web app URL. Replace after deploying the script behind the sheet. */
-  var ENDPOINT = 'PASTE_APPS_SCRIPT_URL_HERE';
-
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbwg4EHGyafFueymNud8gL05UB_jyDv7ny6p0FT0MVZppZeeKjWik_CxIoQPZZCMvw4eag/exec';
+ 
   var form = document.getElementById('app-form');
   var STORE = 'id-pilot-application-v1';
-
+ 
   function radioAnswered(name){ return !!form.querySelector('input[name="'+name+'"]:checked'); }
-
+ 
   function checklist(){
     var items = [];
     form.querySelectorAll('input[data-required], textarea[data-required], select[data-required]').forEach(function(el){
@@ -555,7 +555,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
     if(win) items.push({key:'g:window', ok:radioAnswered('window'), el:win});
     return items;
   }
-
+ 
   function updateProgress(){
     var items = checklist();
     var done = items.filter(function(i){return i.ok;}).length;
@@ -564,7 +564,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
     document.getElementById('pct').textContent = pct + '%';
     document.querySelector('.progress').setAttribute('aria-valuenow', String(pct));
   }
-
+ 
   function collect(){
     var d = {};
     form.querySelectorAll('input, textarea, select').forEach(function(el){
@@ -582,7 +582,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
     d.same_lead = document.getElementById('same_lead').checked;
     return d;
   }
-
+ 
   function restore(){
     var raw = null;
     try { raw = localStorage.getItem(STORE); } catch(e){ return; }
@@ -601,14 +601,14 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
   }
   function save(){ try { localStorage.setItem(STORE, JSON.stringify(collect())); } catch(e){} }
   function syncLead(){ document.getElementById('lead-fields').style.display = document.getElementById('same_lead').checked ? 'none' : ''; }
-
+ 
   form.addEventListener('input', function(){ save(); updateProgress(); });
   form.addEventListener('change', function(e){
     if(e.target.id === 'same_lead') syncLead();
     save(); updateProgress();
     if(e.target.classList) e.target.classList.remove('invalid');
   });
-
+ 
   function validate(){
     var items = checklist();
     var bad = items.filter(function(i){return !i.ok;});
@@ -620,7 +620,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
     if(email.value && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)){ email.classList.add('invalid'); bad.push({el:email}); }
     return bad;
   }
-
+ 
   function recordText(rec){
     var d = rec.data, lines = [];
     lines.push('AI GOVERNANCE PILOT COHORT APPLICATION');
@@ -669,7 +669,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
     lines.push(d.anything || 'nothing added');
     return lines.join('\n');
   }
-
+ 
   function showConfirm(rec, sent){
     document.getElementById('form-view').classList.add('hide');
     document.getElementById('confirm').classList.add('show');
@@ -686,7 +686,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
     }
     window.scrollTo({top:0, behavior:'smooth'});
   }
-
+ 
   function post(payload){
     return fetch(ENDPOINT, {
       method:'POST',
@@ -698,7 +698,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
       });
     });
   }
-
+ 
   form.addEventListener('submit', function(ev){
     ev.preventDefault();
     var bad = validate();
@@ -715,7 +715,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
     err.classList.remove('show');
     var btn = document.getElementById('submit-btn');
     btn.disabled = true; btn.textContent = 'Sending';
-
+ 
     var rec = {received:new Date().toLocaleString(), data:collect()};
     var payload = {};
     Object.keys(rec.data).forEach(function(k){
@@ -723,7 +723,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
       payload[k] = Array.isArray(v) ? v.join('; ') : v;
     });
     payload.submitted_at = rec.received;
-
+ 
     post(payload).then(function(ok){
       btn.disabled = false; btn.textContent = 'Submit application';
       showConfirm(rec, ok);
@@ -734,7 +734,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
         .catch(function(){ btn.disabled = false; btn.textContent = 'Submit application'; showConfirm(rec, false); });
     });
   });
-
+ 
   document.getElementById('copy-btn').addEventListener('click', function(){
     var btn = this, t = window.__record || '';
     if(navigator.clipboard && navigator.clipboard.writeText){
@@ -751,7 +751,7 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
     setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
     this.textContent = 'Downloaded';
   });
-
+ 
   restore();
   syncLead();
   updateProgress();
@@ -759,3 +759,4 @@ pre.record{margin:14px 0 0; padding:14px; background:var(--surface-2); border:1p
 </script>
 </body>
 </html>
+ 
